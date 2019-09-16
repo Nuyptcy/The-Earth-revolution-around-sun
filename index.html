@@ -29,6 +29,12 @@
         to{box-shadow: 0 0 90px #f5c91a;}
     }
 
+    @keyframes spin{
+        from{transform: rotate(0);}
+        to{transform: rotate(360deg);}
+
+    }
+
     #stars {
         height: 100%;
         background-image: url("stars_v7.png"); 
@@ -60,10 +66,12 @@
         margin-left: -300px;
         /* border-radius: 300px; */
         border: 1px solid red;
+        animation: spin 30s linear infinite;
     }
 
     #earth{
         position: absolute;
+        top: 300px;
         margin-top: -75px;
         margin-left: -75px;
     }
