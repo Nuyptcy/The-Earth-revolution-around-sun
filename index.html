@@ -58,13 +58,13 @@
     }
 
     #earthorbit{
-        height: 600px;
-        width: 600px;
+        height: 500px;
+        width: 500px;
         position: absolute;
         top:50%;
         left: 50%;
-        margin-top: -300px;
-        margin-left: -300px;
+        margin-top: -250px;
+        margin-left: -250px;
         /* border-radius: 300px; */
         border: 1px solid red;
         /* animation: spin 30s linear infinite; */
@@ -72,10 +72,28 @@
 
     #earth{
         position: absolute;
-        top: 300px;
+        top: 250px;
         margin-top: -75px;
         margin-left: -75px;
         /* animation: spin  10s linear infinite; */
+    }
+
+    #moonorbit{
+        height: 120px;
+        width:120px;
+       
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        
+        margin-left: -310px; /*earth orbit + the half width of orbit */
+        margin-top: -60px;
+        
+       
+       
+        border: 1px solid red;
+        
+        
     }
     </style>    
 </head>
@@ -85,6 +103,9 @@
     <div id="sun"></div> 
     <div id="earthorbit">
         <img id="earth" src="catcircle.png" alt="cat" height="150px" width="150px">
+    </div>
+    <div id="moonorbit">
+        <div id="moon"></div>
     </div>
 
 
