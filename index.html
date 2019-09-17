@@ -65,9 +65,9 @@
         left: 50%;
         margin-top: -250px;
         margin-left: -250px;
-        /* border-radius: 300px; */
+        border-radius: 300px; 
         border: 1px solid red;
-        /* animation: spin 30s linear infinite; */
+        animation: spin 30s linear infinite;
     }
 
     #earth{
@@ -75,7 +75,7 @@
         top: 250px;
         margin-top: -75px;
         margin-left: -75px;
-        /* animation: spin  10s linear infinite; */
+        animation: spin  10s linear infinite;
     }
 
     #moonorbit{
@@ -86,6 +86,7 @@
         top: 50%;
         left: 50%;
         
+        border-radius: 100%;
         margin-left: -310px; /*earth orbit + the half width of orbit */
         margin-top: -60px;
         
@@ -95,6 +96,14 @@
         
         
     }
+
+    #moon{
+        width: 30px;
+        height: 30px;
+        background: radial-gradient(#ddd,#888);
+        border-radius: 100%;
+
+    }
     </style>    
 </head>
 
@@ -103,10 +112,13 @@
     <div id="sun"></div> 
     <div id="earthorbit">
         <img id="earth" src="catcircle.png" alt="cat" height="150px" width="150px">
+        <div id="moonorbit">
+            <div id="moon"></div>
+        </div>
+                
+        
     </div>
-    <div id="moonorbit">
-        <div id="moon"></div>
-    </div>
+    
 
 
 </body>
